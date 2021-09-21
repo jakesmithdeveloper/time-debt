@@ -1,14 +1,14 @@
 import React from "react";
 
-const Debt = ({ name, hours, minutes }) => {
+const Task = ({ name, completed }) => {
   return (
     <div>
       <span className="inline-flex">
         <h3>{name}</h3>
-        <h4>{`( ${hours}:${minutes < 10 ? `0${minutes}` : minutes} )`}</h4>
+        <input type="checkbox" value={completed} />
       </span>
     </div>
   );
 };
 
-export default Debt;
+export default Task;
